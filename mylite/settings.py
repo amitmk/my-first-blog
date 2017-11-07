@@ -25,7 +25,7 @@ SECRET_KEY = 'i0-27o%o8=&wg*k*_^1$yk1!vhs7)3+3+4rv16ylu_7#x3o0*7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'amitmk.pythonanywhere.com']
 
 
 # Application definition
@@ -78,9 +78,11 @@ WSGI_APPLICATION = 'mylite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'amit',
+        'NAME':'amit',
         'USER': 'root',
         'PASSWORD': 'password',
+        'DATABASE_HOST' : '127.0.0.1',
+        'DATABASE_PORT ' : '3306',
     }
 }
 
